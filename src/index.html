@@ -11,7 +11,182 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    class="form1">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="div1">
+          <label class="form-field" for="for1">
+        Surname:
+            <input
+         type="text"
+         name="Surname"
+         required
+         id = "for1"
+         >
+          </label>
+          <label class="form-field" for="for2">
+        Name:
+            <input
+        type="text"
+        name="Name"
+        required
+        id = "for2"
+        >
+          </label>
+          <label class="form-field" for="for3">
+        How old are you?:
+            <input
+            type="text"
+            name="How old are you?"
+            required
+            value="12"
+            max="100"
+            id="for3"
+            >
+          </label>
+          <label class="form-field" for="for4">
+            Full date of birth:
+            <input
+            type="text"
+            name="full date of birth"
+            placeholder="mm/dd/yyyy"
+            required
+            id = "for4"
+            >
+          </label>
+          <label class="form-field" for="for5">
+            <label for ="for5">I accept the term of the agreement</label>
+            <input
+            type="checkbox"
+            name="terms"
+            required
+            id = "for5"
+            >
+          </label>
+        </div>
+      </fieldset>
+    </form>
+    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method ="post"
+    class="form2"
+    >
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="div2">
+          <label class="form-field" for="for6">
+          E-mail:
+            <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+            id="for6"
+            >
+          </label>
+          <label class="form-field" for="for7">
+          Password:
+            <input
+            type="password"
+            name="email"
+            required
+            minlength="5"
+            maxlength="32"
+            id = "for7"
+            >
+          </label>
+        </div>
+      </fieldset>
+    </form>
+    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method ="post"
+    class="form3"
+    >
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="div3">
+          <label class="form-field-cats" for="for8">
+            Do you love cats?
+            <input
+            type="radio"
+            name="cats?"
+            value="y"
+            id = "for8"
+            >
+            Yes
+          </label>
+          <input
+            type="radio"
+            name="cats?"
+            value="n"
+            >
+            No
+          </label>
+          <label class="form-field" for="for10">
+            What is your favourite color?
+            <input
+            type="color"
+            required
+            value="color"
+            id="for10"
+            >
+          </label>
+          <label class="form-field" for="10.5">
+            What time do you go to bed?
+            <input
+            type="time"
+            required
+            id="10.5"
+            >
+          </label>
+          <label class="form-field" for="for11">
+            What are you favourite brend of car?
+            <select name="cars"
+            required
+            multiple
+            id="for11"
+            >
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+          <label class="form-field" for="for12">
+            How do you rate our work?
+            <input
+            type="range"
+            required
+            id = "for12"
+            >
+          </label>
+        </div>
+      </fieldset>
+    </form>
+      </fieldset>
+    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
+        method ="post"
+        class="form4"
+    >
+      <fieldset>
+        <legend>Additional Info</legend>
+        <div class="div4">
+          <label class="form-field" for="for13">
+            Comments:
+            <textarea name="comments" id="for13"></textarea>
+          </label>
+          <label class="form-field for="for14">
+            Would you recommend us?
+            <textarea
+            name="recomend"
+            cols="2" rows="1"
+            placeholder="yes">
+          </textarea>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
