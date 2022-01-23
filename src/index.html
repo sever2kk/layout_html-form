@@ -11,184 +11,173 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-    class="form1">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <div class="div1">
-          <label class="form-field" for="for1">
-        Surname:
-            <input
-         type="text"
-         name="Surname"
-         required
-         id = "for1"
-         >
-          </label>
-          <label class="form-field" for="for2">
-        Name:
-            <input
-        type="text"
-        name="Name"
-        required
-        id = "for2"
-        >
-          </label>
-          <label class="form-field" for="for3">
-        How old are you?:
-            <input
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="field-box">
+        <legend>Personal information</legend>
+        <div class="form-field"> 
+          <label for="surname">Surname: </label>
+          <input
             type="text"
-            name="How old are you?"
+            name="Surname"
+            id="surname"
             required
-            value="12"
+            autocomplete="off"
+          > 
+        </div>
+        <div class="form-field">
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            autocomplete="off"
+          > 
+        </div>
+        <div class="form-field">
+          <label for="how old are You">How old are You? </label>
+          <input
+            type="number"
+            name="age"
+            id="how old are You"
+            min="1"
             max="100"
-            id="for3"
-            >
-          </label>
-          <label class="form-field" for="for4">
-            Full date of birth:
-            <input
-            type="text"
-            name="full date of birth"
-            placeholder="mm/dd/yyyy"
+            value="12"
+          > 
+        </div>
+        <div class="form-field">
+          <label for="date">Full date of birth: </label>
+          <input
+            type="date"
+            name="date of birth"
+            id="date"
             required
-            id = "for4"
-            >
-          </label>
-          <label class="form-field" for="for5">
-            <label for ="for5">I accept the term of the agreement</label>
-            <input
+          > 
+        </div>
+        <div class="form-field">
+          <label for="term and agreement">I accept the term of the agreement </label>
+          <input
             type="checkbox"
             name="terms"
+            id="term and agreement"
             required
-            id = "for5"
-            >
-          </label>
+          > 
         </div>
       </fieldset>
-    </form>
-    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method ="post"
-    class="form2"
-    >
-      <fieldset>
+      <fieldset class="field-box">
         <legend>Registration</legend>
-        <div class="div2">
-          <label class="form-field" for="for6">
-          E-mail:
-            <input
+        <div class="form-field">
+          <label for="mail">E-mail: </label>
+          <input
             type="email"
-            name="email"
+            name="mail"
+            id="mail"
             placeholder="email@example.com"
             required
-            id="for6"
-            >
-          </label>
-          <label class="form-field" for="for7">
-          Password:
-            <input
+          >
+        </div>
+        <div class="form-field">
+          <label for="password">Password: </label>
+          <input
             type="password"
-            name="email"
-            required
+            name="password"
+            id="password"
             minlength="5"
-            maxlength="32"
-            id = "for7"
-            >
-          </label>
+            maxlength="30"
+            required
+          >
         </div>
       </fieldset>
-    </form>
-    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method ="post"
-    class="form3"
-    >
-      <fieldset>
+      <fieldset class="field-box">
         <legend>An interesting fact about you!</legend>
-        <div class="div3">
-          <label class="form-field-cats" for="for8">
-            Do you love cats?
-            <input
-            type="radio"
-            name="cats?"
-            value="y"
-            id = "for8"
-            >
-            Yes
-          </label>
+        <div class="form-field">
+          Do you love cats?
+          <label for="love cats yes">Yes</label>
           <input
             type="radio"
-            name="cats?"
-            value="n"
-            >
-            No
-          </label>
-          <label class="form-field" for="for10">
-            What is your favourite color?
-            <input
-            type="color"
+            name="love cats"
+            id="love cats yes"
+          >
+          <label for="love cats no">No</label>
+          <input
+            type="radio"
+            name="love cats"
+            id="love cats no"
+          >  
+        </div>
+        <div class="form-field">
+          <label for="colors">What is your favorite color?</label>
+          <input
+            type="color" 
+            name="color" 
+            id="colors"
+            value="#000"
             required
-            value="color"
-            id="for10"
-            >
-          </label>
-          <label class="form-field" for="10.5">
-            What time do you go to bed?
-            <input
+          >
+        </div>
+        <div class="form-field">
+          <label for="time">What time do you go to bed?</label>
+          <input
             type="time"
+            name="time"
+            id="time"
             required
-            id="10.5"
-            >
-          </label>
-          <label class="form-field" for="for11">
-            What are you favourite brend of car?
-            <select name="cars"
+          >
+        </div>
+        <div class="form-field">
+          <label for="cars">What are your favorite brand of cars?</label>
+          <select
+            name="favorite cars" 
+            id="cars"
             required
             multiple
-            id="for11"
-            >
-              <option value="bmw">BMW</option>
-              <option value="audi">Audi</option>
-              <option value="lada">Lada</option>
-            </select>
-          </label>
-          <label class="form-field" for="for12">
-            How do you rate our work?
-            <input
+          >
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="rates">How do you rate our work?</label>
+          <input
             type="range"
+            name="rate"
+            id="rates"
+            value="0"
+            min="0"
+            max="100"
             required
-            id = "for12"
-            >
-          </label>
+          >
         </div>
       </fieldset>
-    </form>
-      </fieldset>
-    <form action ="https://mate-academy-form-lesson.herokuapp.com/create-application"
-        method ="post"
-        class="form4"
-    >
-      <fieldset>
-        <legend>Additional Info</legend>
-        <div class="div4">
-          <label class="form-field" for="for13">
-            Comments:
-            <textarea name="comments" id="for13"></textarea>
-          </label>
-          <label class="form-field" for="for14">
-            Would you recommend us?
-            <textarea
-            name="recomend"
-            cols="2" rows="1"
-            placeholder="yes"
-            id="for14"
-            >
-            </textarea>
-          </label>
+      <fieldset class="field-box">
+        <legend>Additional info:</legend>
+        <div class="form-field">
+          <label for="comment">Comments:</label>
+          <textarea
+            name="coments" 
+            id="comment" 
+            cols="20" rows="2"
+            required
+          ></textarea>
+        </div>        
+        <div class="form-field">
+          <label for="recomends">Would you recommend us?</label>
+          <select 
+            name="recomends" 
+            id="recomends"
+            aria-placeholder="yes"
+          >  
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </div>
       </fieldset>
+      <button type="submit">Submit</button>
     </form>
-    <button type="submit">Submit</button>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
